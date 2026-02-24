@@ -45,7 +45,7 @@ export function HeroSection() {
       <div className="relative mx-auto max-w-6xl w-full">
         {/* Main headline — each letter animated */}
         <h1 className="font-heading font-bold leading-[0.9] tracking-tight mb-6">
-          <span className="block text-5xl md:text-7xl lg:text-[8rem] xl:text-[9rem]">
+          <span dir="ltr" className="block text-5xl md:text-7xl lg:text-[8rem] xl:text-[9rem]">
             {brandName.split("").map((letter, i) => (
               <motion.span
                 key={i}
