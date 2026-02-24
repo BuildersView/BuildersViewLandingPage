@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install @neondatabase/serverless framer-motion zod @mux/mux-player-react)",
+      "Bash(npx shadcn@latest init -d --src-dir)",
+      "Bash(npx shadcn@latest add accordion button card input textarea label form badge sheet separator -y)",
+      "Bash(npm run build)"
+    ]
+  }
+}
