@@ -29,7 +29,9 @@ export function ProcessStepCard({ step, index }: ProcessStepCardProps) {
     >
       {/* Content */}
       <div className="flex-1">
-        <div className="text-5xl mb-4">{step.icon}</div>
+        <div className="mb-4">
+          <step.icon className="w-8 h-8 text-copper" strokeWidth={1.5} />
+        </div>
         <h3 className="font-heading text-xl md:text-2xl font-semibold text-foreground mb-2">
           {step.title}
         </h3>

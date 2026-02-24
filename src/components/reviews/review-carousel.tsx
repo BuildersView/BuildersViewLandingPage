@@ -12,28 +12,40 @@ const reviews: Review[] = [
     quote:
       "BuildersView לקחו רעיון שהיה רק בראש שלי והפכו אותו למערכת שלמה. מקצועיות ברמה אחרת.",
     name: "יוסי כהן",
-    role: "מייסד, TechFlow",
+    role: "מייסד",
+    company: "TechFlow",
+    siteUrl: "https://techflow.co.il",
+    image: "https://i.pravatar.cc/150?u=yossi",
   },
   {
     id: 2,
     quote:
       "מה שהכי הפתיע אותי זה הליווי אחרי ההשקה. הם לא נעלמו — ממשיכים לתחזק, לשפר, ולהיות שם.",
     name: "נועה לוי",
-    role: "סמנכ״לית מוצר, EduSpark",
+    role: "סמנכ״לית מוצר",
+    company: "EduSpark",
+    siteUrl: "https://eduspark.co.il",
+    image: "https://i.pravatar.cc/150?u=noa",
   },
   {
     id: 3,
     quote:
       "עבדנו עם כמה חברות פיתוח לפני כן. BuildersView הם הראשונים שבאמת הבינו את הצורך העסקי ולא רק את הטכנולוגיה.",
     name: "דני אברהם",
-    role: "CEO, FinanceHub",
+    role: "CEO",
+    company: "FinanceHub",
+    siteUrl: "https://financehub.co.il",
+    image: "https://i.pravatar.cc/150?u=dani",
   },
   {
     id: 4,
     quote:
       "התהליך היה שקוף מהרגע הראשון. ידענו בדיוק מה קורה, מתי, ולמה. ככה צריך לעבוד.",
     name: "מיכל שטרן",
-    role: "מנהלת פרויקטים, GreenTech",
+    role: "מנהלת פרויקטים",
+    company: "GreenTech",
+    siteUrl: "https://greentech.co.il",
+    image: "https://i.pravatar.cc/150?u=michal",
   },
 ];
 

@@ -2,6 +2,14 @@
 
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import {
+  Ear,
+  PencilRuler,
+  Code,
+  ShieldCheck,
+  Rocket,
+  Handshake,
+} from "lucide-react";
 import { ProcessStepCard } from "./process-step";
 import type { ProcessStep } from "@/lib/types";
 
@@ -11,42 +19,42 @@ const processSteps: ProcessStep[] = [
     title: "מקשיבים",
     description:
       "יושבים איתך, מבינים את הרעיון, את הכאב, את החלום. שום דבר לא מתחיל בלי הבנה עמוקה.",
-    icon: "👂",
+    icon: Ear,
   },
   {
     id: 2,
     title: "מאפיינים",
     description:
       "מתרגמים את הרעיון לאפיון מדויק — UX, לוגיקה עסקית, טכנולוגיה, סקיילביליות. הכל על הנייר לפני שורת קוד אחת.",
-    icon: "📐",
+    icon: PencilRuler,
   },
   {
     id: 3,
     title: "בונים",
     description:
       "פיתוח מקצועי ומודולרי עם הטכנולוגיות הנכונות. קוד נקי, ארכיטקטורה יציבה, ביצועים גבוהים.",
-    icon: "🏗️",
+    icon: Code,
   },
   {
     id: 4,
     title: "בודקים",
     description:
       "בדיקות מלאות — פונקציונליות, אבטחה, חוויית משתמש. כל פינה עוברת ביקורת לפני שעולים לאוויר.",
-    icon: "🔍",
+    icon: ShieldCheck,
   },
   {
     id: 5,
     title: "משיקים",
     description:
       "השקה מלווה ומבוקרת. מוודאים שהכל עובד, עוזרים עם ההגדרות, ומלווים את הרגעים הראשונים.",
-    icon: "🚀",
+    icon: Rocket,
   },
   {
     id: 6,
     title: "מלווים",
     description:
       "אנחנו לא נעלמים אחרי ההשקה. תחזוקה, שיפורים, עדכונים — נישאר איתך לאורך כל הדרך.",
-    icon: "🤝",
+    icon: Handshake,
   },
 ];
 

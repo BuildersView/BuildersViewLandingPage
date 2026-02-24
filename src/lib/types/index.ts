@@ -1,8 +1,10 @@
+import type { LucideIcon } from "lucide-react";
+
 export interface ProcessStep {
   id: number;
   title: string;
   description: string;
-  icon: string;
+  icon: LucideIcon;
 }
 
 export interface FAQItem {
@@ -15,6 +17,9 @@ export interface Review {
   quote: string;
   name: string;
   role: string;
+  company: string;
+  siteUrl: string;
+  image: string;
 }
 
 export interface Project {

@@ -4,7 +4,8 @@
       "Bash(npm install @neondatabase/serverless framer-motion zod @mux/mux-player-react)",
       "Bash(npx shadcn@latest init -d --src-dir)",
       "Bash(npx shadcn@latest add accordion button card input textarea label form badge sheet separator -y)",
-      "Bash(npm run build)"
+      "Bash(npm run build)",
+      "Bash(node -e \"const lr = require\\(''lucide-react''\\); const names = Object.keys\\(lr\\).filter\\(k => k[0] === k[0].toUpperCase\\(\\) && !k.startsWith\\(''create''\\) && !k.startsWith\\(''default''\\)\\).filter\\(n => n.toLowerCase\\(\\).includes\\(''pen''\\) || n.toLowerCase\\(\\).includes\\(''ruler''\\) || n.toLowerCase\\(\\).includes\\(''draft''\\) || n.toLowerCase\\(\\).includes\\(''compass''\\) || n.toLowerCase\\(\\).includes\\(''blueprint''\\)\\); console.log\\(names\\);\")"
     ]
   }
 }
