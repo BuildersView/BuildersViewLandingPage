@@ -105,4 +105,24 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-color: #2C3640 #0F1419;
+}
+
+/* Webkit scrollbar (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0F1419;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2C3640;
+  border-radius: 5px;
+  border: 2px solid #0F1419;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C8956C;
 }

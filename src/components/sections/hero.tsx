@@ -2,21 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-
-const letterVariants = {
-  hidden: { opacity: 0, y: 40 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 0.3 + i * 0.05,
-      duration: 0.5,
-      ease: [0.25, 0.46, 0.45, 0.94] as [number, number, number, number],
-    },
-  }),
-};
-
-const brandName = "BuildersView";
+import BlurText from "@/components/reactbits/blur-text";
 
 export function HeroSection() {
   return (
@@ -43,46 +29,33 @@ export function HeroSection() {
       />
 
       <div className="relative mx-auto max-w-6xl w-full">
-        {/* Main headline — each letter animated */}
-        <h1 className="font-heading font-bold leading-[0.9] tracking-tight mb-6">
-          <span dir="ltr" className="block text-5xl md:text-7xl lg:text-[8rem] xl:text-[9rem]">
-            {brandName.split("").map((letter, i) => (
-              <motion.span
-                key={i}
-                custom={i}
-                initial="hidden"
-                animate="visible"
-                variants={letterVariants}
-                className="inline-block"
-                style={
-                  letter === "V"
-                    ? { color: "var(--primary)" }
-                    : undefined
-                }
-              >
-                {letter}
-              </motion.span>
-            ))}
-          </span>
+        {/* Main headline — blur reveal by letters */}
+        <h1 className="font-heading font-bold leading-[0.9] tracking-tight mb-6" dir="ltr">
+          <BlurText
+            text="BuildersView"
+            delay={60}
+            animateBy="letters"
+            direction="bottom"
+            className="text-5xl md:text-7xl lg:text-[8rem] xl:text-[9rem] font-bold"
+            stepDuration={0.4}
+          />
         </h1>
 
-        {/* Subtitle */}
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1, duration: 0.6, ease: "easeOut" }}
+        {/* Subtitle — blur reveal by words */}
+        <BlurText
+          text="יש לך רעיון? אנחנו נהפוך אותו למציאות — ונישאר איתך לאורך כל הדרך."
+          delay={80}
+          animateBy="words"
+          direction="bottom"
           className="text-lg md:text-xl lg:text-2xl text-text-secondary max-w-xl leading-relaxed mb-10 font-light"
-        >
-          יש לך רעיון? אנחנו נהפוך אותו למציאות —
-          <br className="hidden md:block" />
-          ונישאר איתך לאורך כל הדרך.
-        </motion.p>
+          stepDuration={0.35}
+        />
 
         {/* CTA */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 1.3, duration: 0.4, type: "spring", stiffness: 200 }}
+          transition={{ delay: 1.8, duration: 0.4, type: "spring", stiffness: 200 }}
         >
           <Button
             asChild

@@ -1,6 +1,7 @@
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { HeroSection } from "@/components/sections/hero";
+import { StatsSection } from "@/components/sections/stats";
 import { AboutProcessSection } from "@/components/sections/about-process";
 import { ProjectsSection } from "@/components/sections/projects";
 import { ReviewsSection } from "@/components/sections/reviews";
@@ -13,6 +14,7 @@ export default function HomePage() {
       <Header />
       <main>
         <HeroSection />
+        <StatsSection />
         <AboutProcessSection />
         <ProjectsSection />
         <ReviewsSection />
