@@ -24,9 +24,12 @@ export interface Review {
 
 export interface Project {
   id: number;
+  name: string;
+  logo: string;
   title: string;
   description: string;
   category: string;
+  process: string[];
   href: string;
 }
 

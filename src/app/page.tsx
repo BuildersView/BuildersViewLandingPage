@@ -7,10 +7,11 @@ import { ProjectsSection } from "@/components/sections/projects";
 import { ReviewsSection } from "@/components/sections/reviews";
 import { FAQSection } from "@/components/sections/faq";
 import { ContactSection } from "@/components/sections/contact-form";
+import { IntroScreen } from "@/components/intro/intro-screen";
 
 export default function HomePage() {
   return (
-    <>
+    <IntroScreen>
       <Header />
       <main>
         <HeroSection />
@@ -22,6 +23,6 @@ export default function HomePage() {
         <ContactSection />
       </main>
       <Footer />
-    </>
+    </IntroScreen>
   );
 }
